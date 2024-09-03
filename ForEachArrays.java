@@ -66,7 +66,7 @@ public class ForEachArrays {
         }
 
         // Let's a reverse a string
-        String myStrToReverse = "abcdefg";
+        String myStrToReverse = "abcdefghijklmnopqrstuvwxyz";
         // Output the chars of myStrToReverse
 
         for (int i = 0; i < 7; i++){
@@ -79,7 +79,7 @@ public class ForEachArrays {
         // Output reversedStr.
         System.out.println("reversedStr before reversion loop is: " + reversedStr);
 
-        for (int i = 6; i >=0; i--) {
+        for (int i = myStrToReverse.length()-1; i >=0; i--) {
             char charToAdd = myStrToReverse.charAt(i);
             reversedStr = reversedStr.concat(Character.toString(charToAdd));
 
